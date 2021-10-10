@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  websocket-exporter:
+    image: phinixhq/websocket-exporter
+    restart: unless-stopped
+    environment: 
+      port: "9143"
+    network_mode: "host"
